@@ -4,7 +4,7 @@ import { Bell, GraduationCap, Lightbulb, Shield, Wrench } from "lucide-react";
 
 const Services = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 ">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="hover:shadow-lg transition-shadow">

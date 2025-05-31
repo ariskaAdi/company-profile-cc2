@@ -1,5 +1,9 @@
+import BlogTable from "@/components/admin/blog-table";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
 import { Metadata } from "next";
-import React from "react";
+import Link from "next/link";
+import React, { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Dashboard ",
@@ -24,6 +28,29 @@ const page = () => {
         </div>
       </div>
       {/* dashboard admin */}
+      {/* Main section */}
+      <div className="md:p-12">
+        {/* Header section: title + button */}
+        <div className="mb-4 flex items-center justify-between p-4">
+          <h1 className="text-2xl font-semibold">Blog List</h1>
+          <Button className="w-40" asChild>
+            <Link href="/admin/create">
+              Create Blog
+              <Plus className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
+        </div>
+
+        {/* Table section */}
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center py-10 text-gray-500 text-md animate-pulse">
+              Loading Data...
+            </div>
+          }>
+          <BlogTable />
+        </Suspense>
+      </div>
     </main>
   );
 };

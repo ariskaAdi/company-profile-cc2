@@ -80,13 +80,8 @@ export function Header() {
             <>
               <Link
                 href="/admin"
-                className="text-sm font-medium text-white hover:text-white/80">
+                className="text-md font-medium text-white hover:text-white/80">
                 Dashboard
-              </Link>
-              <Link
-                href="/admin/create"
-                className="text-sm font-medium text-white hover:text-white/80">
-                Create Blog
               </Link>
             </>
           )}
@@ -111,7 +106,7 @@ export function Header() {
                 </AvatarFallback>
               </Avatar>
               <Button
-                className="bg-white text-red-600 hover:backdrop-blur-2xl hover:text-white hover:bg-red-600"
+                className="bg-white text-red-600 hover:backdrop-blur-2xl hover:text-white hover:bg-red-600 border-2 border-red-600"
                 onClick={() => signOut()}>
                 Sign Out
               </Button>

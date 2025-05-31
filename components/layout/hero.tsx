@@ -13,14 +13,14 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6 mt-4">
-              <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
+              <h1 className="text-md md:text-3xl lg:text-5xl font-sans text-shadow-neutral-950  text-white leading-tight">
                 Travel Smarter,
                 <br />
-                Ride with Confidence,
+                Ride with <span className="text-orange-500">Confidence</span>,
                 <br />
                 Choose Bagong
               </h1>
-              <p className="text-md text-gray-400 max-w-md">
+              <p className="text-sm md:text-md text-gray-400 max-w-md">
                 Reliable and comfortable intercity transport, designed for your
                 convenience. Book tickets in minutes and enjoy the journey.
               </p>
@@ -29,11 +29,11 @@ const Hero = () => {
             {/* Email Signup */}
             <div className="flex flex-col sm:flex-row gap-3 max-w-md">
               <Input
-                type="email"
-                placeholder="samantha@email.com"
-                className="flex-1 h-12 px-4 border-gray-300 focus:border-teal-500 focus:ring-teal-500 bg-amber-50 rounded-4xl"
+                type="text"
+                placeholder="Search..."
+                className="flex-1 h-12 px-4 border-gray-300 focus:border-teal-500 focus:ring-teal-500 bg-orange-50 rounded-4xl"
               />
-              <Button className="h-12 px-8 bg-amber-500 hover:bg-teal-700 text-white whitespace-nowrap rounded-4xl">
+              <Button className="h-12 px-8 bg-orange-500 hover:bg-teal-700 text-white whitespace-nowrap rounded-4xl">
                 Get Started
               </Button>
             </div>
