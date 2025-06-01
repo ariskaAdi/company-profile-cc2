@@ -8,19 +8,20 @@ const Hero = () => {
     <section
       className="relative w-full h-[700px] bg-cover bg-center pt-16 "
       style={{ backgroundImage: 'url("/empty-seat.jpg")' }}>
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-12 md:py-28 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center ">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6 mt-4">
-              <h1 className="text-md md:text-3xl lg:text-5xl font-sans text-shadow-neutral-950  text-white leading-tight">
+              <h1 className="text-3xl md:text-3xl lg:text-6xl font-sans text-shadow-neutral-950  text-white leading-tight">
                 Travel Smarter,
                 <br />
-                Ride with <span className="text-orange-500">Confidence</span>,
+                Ride with <span className="text-orange-500">Confidence</span>
+                ,
                 <br />
                 Choose Bagong
               </h1>
-              <p className="text-sm md:text-md text-gray-400 max-w-md">
+              <p className="text-md text-gray-400 max-w-md">
                 Reliable and comfortable intercity transport, designed for your
                 convenience. Book tickets in minutes and enjoy the journey.
               </p>
@@ -53,17 +54,8 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative mt-6">
-            <div className="relative z-10">
-              <Image
-                src="/hero-bagong-removeg.png"
-                alt="Woman wearing headphones focusing on work"
-                width={600}
-                height={600}
-                className="w-full h-auto rounded-2xl"
-                priority
-              />
-            </div>
+          <div className="relative mt-20">
+            <div className="relative z-10"></div>
 
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-amber-500 rounded-full opacity-80 z-20"></div>
@@ -71,7 +63,7 @@ const Hero = () => {
             <div className="absolute bottom-1/4 -right-8 w-20 h-20 bg-pink-400 rounded-full opacity-60"></div>
 
             {/* Floating Image Cards */}
-            <div className="absolute top-8 right-8 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
+            <div className="absolute top-8 right-8 w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
               <Image
                 src="/hero-bagong.jpg"
                 alt="bagong"
@@ -81,7 +73,7 @@ const Hero = () => {
               />
             </div>
 
-            <div className="absolute bottom-16 left-4 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
+            <div className="absolute bottom-16 left-4 w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
               <Image
                 src="/hero-bagong.jpg"
                 alt="bagong"
@@ -90,25 +82,6 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Curved Lines */}
-            {/* <svg
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30"
-              viewBox="0 0 400 400"
-              fill="none">
-              <path
-                d="M50 200 Q200 100 350 200 Q200 300 50 200"
-                stroke="#6B7280"
-                strokeWidth="2"
-                fill="none"
-              />
-              <path
-                d="M80 150 Q200 80 320 150"
-                stroke="#6B7280"
-                strokeWidth="1"
-                fill="none"
-              />
-            </svg> */}
           </div>
         </div>
       </div>

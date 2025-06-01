@@ -2,10 +2,12 @@ import { getPosts } from "@/lib/data";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
+import { DeleteButton, EditButton } from "./button";
 
 const BlogTable = async () => {
   const blog = await getPosts();
-  if (!blog || blog.length === 0) return <p>No Data</p>;
+  if (!blog || blog.length === 0)
+    return <p className="text-center mt-6 text-gray-500 text-sm">No Data</p>;
 
   return (
     <div className="p-4 w-full overflow-x-auto">
@@ -20,9 +22,7 @@ const BlogTable = async () => {
             <div className="table-cell px-4 py-3 font-bold text-gray-700 uppercase  md:text-center">
               Title
             </div>
-            <div className="table-cell px-4 py-3 font-bold text-gray-700 uppercase md:text-center">
-              Content
-            </div>
+
             <div className="table-cell px-4 py-3 font-bold text-gray-700 uppercase md:text-center">
               Created At
             </div>
@@ -53,20 +53,17 @@ const BlogTable = async () => {
                 {post.title}
               </div>
 
-              {/* Content */}
-              <div className="table-cell px-4 py-3 align-top break-words whitespace-normal md:text-center">
-                {post.content}
-              </div>
-
               {/* Created At */}
               <div className="table-cell px-4 py-3 align-top md:text-center">
                 {formatDate(post.createdAt.toString())}
               </div>
 
               {/* Action */}
-              <div className="table-cell px-4 py-3 align-top text-center">
-                {/* <EditButton id={post.id} /> */}
-                {/* <DeleteButton id={post.id} image={post.image} /> */}
+              <div className="table-cell px-4 py-3 align-top text-center  gap-2">
+                <div className="flex justify-center gap-4">
+                  <EditButton id={post.id} />
+                  <DeleteButton id={post.id} image={post.image ?? ""} />
+                </div>
               </div>
             </div>
           ))}
@@ -95,12 +92,6 @@ const BlogTable = async () => {
               <p className="font-semibold break-words">{post.title}</p>
             </div>
 
-            {/* Content */}
-            <div>
-              <p className="text-sm text-gray-500 font-medium">Content:</p>
-              <p className="break-words">{post.content}</p>
-            </div>
-
             {/* Created At */}
             <div>
               <p className="text-sm text-gray-500 font-medium">Created At:</p>
@@ -108,9 +99,9 @@ const BlogTable = async () => {
             </div>
 
             {/* Actions */}
-            <div className="text-center">
-              {/* <EditButton id={post.id} /> */}
-              {/* <DeleteButton id={post.id} image={post.image} /> */}
+            <div className="text-center flex gap-4">
+              <EditButton id={post.id} />
+              <DeleteButton id={post.id} image={post.image ?? ""} />
             </div>
           </div>
         ))}

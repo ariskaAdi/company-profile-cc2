@@ -10,20 +10,24 @@ const Systems = () => {
           <div>
             <p className="text-orange-600 font-semibold mb-2">OUR FOCUS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Fire <span className="text-orange-600">Systems</span> &<br />
-              Kitchen <span className="text-orange-600">Exhausts</span>
+              Occupational <span className="text-orange-600">Health</span> &
+              <br />
+              Safety <span className="text-orange-600">Policy</span>
             </h2>
             <p className="text-gray-600 mb-6">
-              Fire Protection Equipment Co. provides fire safety services and
-              equipment for commercial businesses including retail stores,
-              restaurants, and warehouses across the metro Minneapolis, St.
-              Paul, and surrounding areas. We provide fire extinguisher sales,
-              service, inspection and training. Our technicians are licensed and
-              certified to service all types of fire safety equipment. We also
-              provide commercial kitchen exhaust cleaning services.
+              Bagong Transport adalah salah satu perusahaan yang bergerak
+              dibidang transportasi bus antar kota dan propinsi, memulai usaha
+              pada tahun 1994. Seiring dengan kebutuhan transportasi di
+              pertambangan, pada tahun 1998 mulai memasuki usaha transportasi di
+              dunia pertambangan. Dan kami juga memberikan pelayanan khusus
+              dalam usaha memenuhi kebutuhan dengan membuat bus 4x4 yang sangat
+              cocok dioperasikan di medan tambang dengan mengutamakan segi
+              keselamatan dan kenyamanan bagi penumpang.
             </p>
             <p className="text-gray-600 mb-8">
-              From fire safety office and protection services.
+              PT Bagong Transport merupakan penyedia layanan transportasi
+              terpercaya di Indonesia, berkomitmen untuk menghadirkan kenyamanan
+              dan keselamatan dalam setiap perjalanan.
             </p>
             <div className="flex space-x-4">
               <Button className="bg-red-600 hover:bg-red-700 text-white">
