@@ -1,5 +1,7 @@
 import React, { Suspense } from "react";
 import GetBlogCard from "./get-blog-card";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -19,6 +21,11 @@ const Blog = () => {
           }>
           <GetBlogCard />
         </Suspense>
+        <div className="mt-8 flex justify-center">
+          <Button className="w-40  bg-red-600" asChild>
+            <Link href="/blog">View All</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );

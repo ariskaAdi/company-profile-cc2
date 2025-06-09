@@ -19,7 +19,7 @@ const BlogCardSection = ({ post }: { post: Post }) => {
           />
         </Link>
         <CardContent className="p-4">
-          <h3 className="text-lg font-semibold mb-2 line-clamp-2">
+          <h3 className="text-lg font-semibold mb-2 line-clamp-1">
             {post.title}
           </h3>
           <Link

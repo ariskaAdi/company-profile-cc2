@@ -6,135 +6,145 @@ export function Footer() {
     <footer className="bg-stone-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* About */}
           <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="/about" className="text-gray-400 hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/company"
+                  className="text-gray-400 hover:text-white">
                   Company
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="/team" className="text-gray-400 hover:text-white">
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/careers"
+                  className="text-gray-400 hover:text-white">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Offers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Help Guide
+                <Link
+                  href="/support"
+                  className="text-gray-400 hover:text-white">
+                  Support
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Service</h3>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Hotel Booking
+                <Link href="/routes" className="text-gray-400 hover:text-white">
+                  Bus Routes & Schedule
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Online Tickets
+                <Link
+                  href="/booking"
+                  className="text-gray-400 hover:text-white">
+                  Online Booking
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Spa & Fitness
+                <Link
+                  href="/charter"
+                  className="text-gray-400 hover:text-white">
+                  Bus Charter
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Restaurants
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Transportation
+                <Link href="/parcel" className="text-gray-400 hover:text-white">
+                  Parcel Delivery
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Terms & Services
+                <Link href="/terms" className="text-gray-400 hover:text-white">
+                  Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Promotional Offers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/testimonials"
+                  className="text-gray-400 hover:text-white">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="/faq" className="text-gray-400 hover:text-white">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  Return Policy
+                <Link href="/policy" className="text-gray-400 hover:text-white">
+                  Refund Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white">
+                  Contact Us
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Address</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <ul className="space-y-4 text-sm">
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-2 flex-shrink-0" />
                 <span className="text-gray-400">
-                  25, Wallstreet, Erevan Resort
+                  Jl. Panglima Sudirman 8 Kepanjen - Malang
                   <br />
-                  Loas Angeles
+                  Jawa Timur 65163 Indonesia
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
                 <div className="text-gray-400">
-                  <div>+123 456 7890 (Tollfree)</div>
-                  <div>+88 0123 4567 (Whatsapp)</div>
+                  <div>+62 812 3456 7890</div>
+                  <div>+62 812 0000 1234 (WhatsApp)</div>
                 </div>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0" />
-                <span className="text-gray-400">info@rovero.com</span>
+                <span className="text-gray-400">support@bagongbus.com</span>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Bottom Footer */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <div className="text-2xl font-bold tracking-tight">ROVERO</div>
+            <div className="text-2xl font-bold tracking-tight">BAGONG BUS</div>
             <div className="text-xs text-gray-400 mt-1">
-              Designed by Jewel Khan © 2019
+              © {new Date().getFullYear()} Bagong Transport. All rights
+              reserved.
             </div>
           </div>
 

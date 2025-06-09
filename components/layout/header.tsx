@@ -65,10 +65,11 @@ export function Header() {
             className="text-md font-medium text-white hover:text-white/80">
             About
           </Link>
+
           <Link
-            href="/rooms"
+            href="/blog"
             className="text-md font-medium text-white hover:text-white/80">
-            Services
+            Blogs
           </Link>
           <Link
             href="/contact"
@@ -122,6 +123,7 @@ export function Header() {
               <Link href="#" className="text-md text-white hover:text-white/80">
                 <Linkedin className="h-4 w-4" />
               </Link>
+
               <Button
                 className="bg-white text-black hover:backdrop-blur-2xl hover:text-white hover:bg-white/20"
                 asChild>
@@ -152,35 +154,38 @@ export function Header() {
         <div className="container mx-auto px-4 py-8 flex flex-col h-full">
           <div className="flex flex-col space-y-6 text-center">
             <Link
-              href="#"
+              href="/"
+              className="text-lg font-medium text-white py-2 border-b border-white/10"
+              onClick={() => setIsMenuOpen(false)}>
+              Home
+            </Link>
+            <Link
+              href="/about"
               className="text-lg font-medium text-white py-2 border-b border-white/10"
               onClick={() => setIsMenuOpen(false)}>
               About
             </Link>
+
             <Link
-              href="#"
+              href="/blog"
               className="text-lg font-medium text-white py-2 border-b border-white/10"
               onClick={() => setIsMenuOpen(false)}>
-              Rooms
+              Blog
             </Link>
             <Link
-              href="#"
-              className="text-lg font-medium text-white py-2 border-b border-white/10"
-              onClick={() => setIsMenuOpen(false)}>
-              Reservation
-            </Link>
-            <Link
-              href="#"
-              className="text-lg font-medium text-white py-2 border-b border-white/10"
-              onClick={() => setIsMenuOpen(false)}>
-              News & Events
-            </Link>
-            <Link
-              href="#"
+              href="/contact"
               className="text-lg font-medium text-white py-2 border-b border-white/10"
               onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
+            {session && session.user.role === "admin" && (
+              <Link
+                href="/admin"
+                className="text-lg font-medium text-white py-2 border-b border-white/10"
+                onClick={() => setIsMenuOpen(false)}>
+                Dashboard
+              </Link>
+            )}
           </div>
 
           <div className="mt-8">

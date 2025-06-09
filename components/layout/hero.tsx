@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,30 +28,12 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Email Signup */}
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md">
-              <Input
-                type="text"
-                placeholder="Search..."
-                className="flex-1 h-12 px-4 border-gray-300 focus:border-teal-500 focus:ring-teal-500 bg-orange-50 rounded-4xl"
-              />
-              <Button className="h-12 px-8 bg-orange-500 hover:bg-teal-700 text-white whitespace-nowrap rounded-4xl">
-                Get Started
+            <Link href="/about" passHref>
+              <Button className="flex items-center justify-center h-12 px-6 bg-orange-500 hover:bg-red-600 text-white rounded-4xl w-full max-w-md mb-8">
+                <ArrowRight className="w-5 h-5 mr-2" />
+                Discover More
               </Button>
-            </div>
-
-            {/* Decorative Pattern */}
-            <div className="hidden md:block">
-              <div className="w-16 h-16 opacity-20">
-                <div className="grid grid-cols-4 gap-1">
-                  {Array.from({ length: 16 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            </Link>
           </div>
 
           {/* Right Content - Hero Image */}
