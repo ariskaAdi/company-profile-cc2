@@ -11,7 +11,7 @@ export const LoginButton = () => {
         await signIn("google");
       }}>
       <Button
-        className="w-full flex items-center justify-center gap-2 bg-white border text-black hover:bg-gray-100"
+        className="w-full flex items-center justify-center gap-2 bg-white border text-black hover:bg-gray-100 cursor-pointer"
         type="submit">
         <FcGoogle className="w-5 h-5" />
         Continue with Google
